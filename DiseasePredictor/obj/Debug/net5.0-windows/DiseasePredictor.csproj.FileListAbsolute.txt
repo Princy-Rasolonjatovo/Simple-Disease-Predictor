@@ -5,7 +5,6 @@ E:\Documents\Dev\ISPM-projects\TD-IA\C-SHARP-IA-AUTODOC\DiseasePredictor\bin\Deb
 E:\Documents\Dev\ISPM-projects\TD-IA\C-SHARP-IA-AUTODOC\DiseasePredictor\bin\Debug\net5.0-windows\DiseasePredictor.dll
 E:\Documents\Dev\ISPM-projects\TD-IA\C-SHARP-IA-AUTODOC\DiseasePredictor\bin\Debug\net5.0-windows\ref\DiseasePredictor.dll
 E:\Documents\Dev\ISPM-projects\TD-IA\C-SHARP-IA-AUTODOC\DiseasePredictor\bin\Debug\net5.0-windows\DiseasePredictor.pdb
-E:\Documents\Dev\ISPM-projects\TD-IA\C-SHARP-IA-AUTODOC\DiseasePredictor\obj\Debug\net5.0-windows\DiseasePredictor.csprojAssemblyReference.cache
 E:\Documents\Dev\ISPM-projects\TD-IA\C-SHARP-IA-AUTODOC\DiseasePredictor\obj\Debug\net5.0-windows\MainWindow.g.cs
 E:\Documents\Dev\ISPM-projects\TD-IA\C-SHARP-IA-AUTODOC\DiseasePredictor\obj\Debug\net5.0-windows\App.g.cs
 E:\Documents\Dev\ISPM-projects\TD-IA\C-SHARP-IA-AUTODOC\DiseasePredictor\obj\Debug\net5.0-windows\DiseasePredictor_MarkupCompile.cache
@@ -22,3 +21,6 @@ E:\Documents\Dev\ISPM-projects\TD-IA\C-SHARP-IA-AUTODOC\DiseasePredictor\obj\Deb
 E:\Documents\Dev\ISPM-projects\TD-IA\C-SHARP-IA-AUTODOC\DiseasePredictor\obj\Debug\net5.0-windows\DiseasePredictor.genruntimeconfig.cache
 E:\Documents\Dev\ISPM-projects\TD-IA\C-SHARP-IA-AUTODOC\DiseasePredictor\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
 E:\Documents\Dev\ISPM-projects\TD-IA\C-SHARP-IA-AUTODOC\DiseasePredictor\obj\Debug\net5.0-windows\DiseasePredictor.csproj.CopyComplete
+E:\Documents\Dev\ISPM-projects\TD-IA\C-SHARP-IA-AUTODOC\DiseasePredictor\obj\Debug\net5.0-windows\DiseasePredictor.csproj.AssemblyReference.cache
+E:\Documents\Dev\ISPM-projects\TD-IA\C-SHARP-IA-AUTODOC\DiseasePredictor\obj\Debug\net5.0-windows\SearchResultWindow.g.cs
+E:\Documents\Dev\ISPM-projects\TD-IA\C-SHARP-IA-AUTODOC\DiseasePredictor\obj\Debug\net5.0-windows\SearchResultWindow.baml

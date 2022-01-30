@@ -5,9 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DiseasePredictor"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="600">
-    <Grid>
-        <Button Content="Search" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="100" Height="29" FontFamily="Segoe UI" FontWeight="Bold" FontSize="11" Click="Button_Click" />
+        Title="Disease Predictor" Height="350" Width="699"
+        ResizeMode="NoResize"
+        >
+    <Grid x:Name="GridMainLayout">
+        <Button x:Name="SearchButton" Content="Search" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="100" Height="29" FontFamily="Segoe UI" FontWeight="Bold" FontSize="11" Click="Button_Search_Click" />
         <Label Content="Disease Predictor " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.464" Width="262"/>
+        <ComboBox x:Name="ComboSelector0" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" Width="210" SelectionChanged="ComboBox_SelectionChanged">
+        </ComboBox>
+        <Button x:Name="AddSymptom" Content="Add Symptoms" HorizontalAlignment="Left" Margin="131,41,0,0" VerticalAlignment="Top" AutomationProperties.HelpText="Add a new symptom" Click="AddSymptom_Click" AutomationProperties.Name="AddSymptomsButton" RenderTransformOrigin="-0.154,0.494" Width="141" Height="29"/>
+        <ComboBox x:Name="ComboSelector1" HorizontalAlignment="Left" Margin="237,94,0,0" VerticalAlignment="Top" Width="210" SelectionChanged="ComboBox_SelectionChanged"/>
+        <ComboBox x:Name="ComboSelector2" HorizontalAlignment="Left" Margin="464,94,0,0" VerticalAlignment="Top" Width="210" SelectionChanged="ComboBox_SelectionChanged"/>
+        <Button x:Name="RemoveSymptom" Content="Remove Symptom" HorizontalAlignment="Left" Margin="306,41,0,0" VerticalAlignment="Top" AutomationProperties.HelpText="Add a new symptom" Click="RemoveSymptom_Click" AutomationProperties.Name="AddSymptomsButton" RenderTransformOrigin="-0.154,0.494" Width="141" Height="29"/>
+        <Grid x:Name="Sub_GridMainLayout"/>
     </Grid>
 </Window>

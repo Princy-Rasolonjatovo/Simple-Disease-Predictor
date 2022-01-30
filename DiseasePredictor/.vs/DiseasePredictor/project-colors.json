@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3d7f39a6-f041-4028-9106-d81b5640bc3e": {
+      "ProjectGuid": "3d7f39a6-f041-4028-9106-d81b5640bc3e",
+      "DisplayName": "DiseasePredictor",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

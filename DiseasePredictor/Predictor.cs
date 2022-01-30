@@ -1,4 +1,9 @@
-﻿using System;
+﻿// @author: Princy Rasolonjatovo
+// @email: princy.m.rasolonjatovo @gmail.com
+// @github : princy-rasolonjatovo
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,17 +18,27 @@ namespace DiseasePredictor
     {
         private Dictionary<string, List<string>> Diseases;
         private Dictionary<string, int> DiseasesID;
-        private Dictionary<string, int> SymptomsID;
+        private Dictionary<string, int> _SymptomsID;
         private List<List<int>> matrix;
         public Predictor(){
             this.Diseases = new Dictionary<string, List<string>>();
             this.DiseasesID = new Dictionary<string, int>();
-            this.SymptomsID = new Dictionary<string, int>();
+            this._SymptomsID = new Dictionary<string, int>();
             this.matrix = new List<List<int>>();
 
             this.LoadData();
             this.DiseaseToID();
             this.PopulateMatrix();
+        }
+        public Dictionary<string, int> Symptoms { 
+            get
+            {
+                return this._SymptomsID;
+            }
+            private set
+            {
+
+            }
         }
         private void LoadData()
         {
@@ -45,9 +60,9 @@ namespace DiseasePredictor
                 this.DiseasesID[DiseaseName] = D_ID++;
                 foreach(string symptom in this.Diseases[DiseaseName])
                 {
-                    if (!this.SymptomsID.ContainsKey(symptom))
+                    if (!this._SymptomsID.ContainsKey(symptom))
                     {
-                        this.SymptomsID[symptom] = S_ID++;
+                        this._SymptomsID[symptom] = S_ID++;
                     }
                 }
             }
@@ -57,7 +72,7 @@ namespace DiseasePredictor
         {
             /// Build matrix
             /// 
-            int vecDim = this.SymptomsID.Count;
+            int vecDim = this._SymptomsID.Count;
             for (int i=0; i < this.Diseases.Count; i++)
             {
                 //this.matrix.Add(new List<int>(vecDim));
@@ -72,7 +87,7 @@ namespace DiseasePredictor
             foreach(KeyValuePair<string, int> p in this.DiseasesID){
                 foreach(string symptom in this.Diseases[p.Key])
                 {
-                    int S_ID = this.SymptomsID[symptom];
+                    int S_ID = this._SymptomsID[symptom];
                     this.matrix[p.Value][S_ID] = 1;
                 }
             }
@@ -115,7 +130,7 @@ namespace DiseasePredictor
         {
             List<string> sID = new List<string>();
             Dictionary<int, string> IDToSymptoms = new Dictionary<int, string>();
-            foreach (KeyValuePair<string, int> p in this.SymptomsID)
+            foreach (KeyValuePair<string, int> p in this._SymptomsID)
             {
                 IDToSymptoms[p.Value] = p.Key;
             }
@@ -126,7 +141,7 @@ namespace DiseasePredictor
             return sID;
         }
         /// <summary>
-        /// Compute the Hamming distance between two vectors
+        /// Compute the Hamming distance between two vectors (Taxicab distance)
         /// </summary>
         /// <param name="A">First Vector</param>
         /// <param name="B">Second Vector</param>
@@ -151,7 +166,7 @@ namespace DiseasePredictor
                 s = s.Trim();
             });
             List<int> vec = new List<int>();
-            for(int i = 0; i < this.SymptomsID.Count; i++)
+            for(int i = 0; i < this._SymptomsID.Count; i++)
             {
                 vec.Add(0);
             }
@@ -159,11 +174,11 @@ namespace DiseasePredictor
             foreach( string s in symptoms)
             {
                 
-                if (!this.SymptomsID.ContainsKey(s))
+                if (!this._SymptomsID.ContainsKey(s))
                 {
                     throw new Exception($"[UnknownSymptomKeyword] symptom: '{s}'is unrecognized!");
                 }
-                vec[this.SymptomsID[s]] = 1;
+                vec[this._SymptomsID[s]] = 1;
             }
 
             /// Predict using Hamming distance

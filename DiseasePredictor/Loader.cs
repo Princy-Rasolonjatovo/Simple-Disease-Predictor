@@ -1,4 +1,8 @@
-﻿using System;
+﻿// @email: princy.m.rasolonjatovo @gmail.com
+// @github : princy-rasolonjatovo
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +21,7 @@ namespace DiseasePredictor
         }
         private string _JsonPath;
         
-        public Loader(string filepath= "E:/Documents/Dev/ISPM-projects/TD-IA/C-SHARP-IA-AUTODOC/DiseasePredictor/bin/Debug/net5.0-windows/Data/data-csharp.json")
+        public Loader(string filepath = "./Data/data-csharp.json")
         {
             this._JsonPath = filepath;
             this.ReadJson();

@@ -49,7 +49,7 @@
   },
   "packageFolders": {
     "C:\\Users\\Max\\.nuget\\packages\\": {},
-    "E:\\Microsoft_Visual_Studio_SDK_Tools\\NuGetPackages": {}
+    "E:\\visual-studio-sdk\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -61,7 +61,7 @@
       "outputPath": "E:\\Documents\\Dev\\ISPM-projects\\TD-IA\\C-SHARP-IA-AUTODOC\\DiseasePredictor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "E:\\Microsoft_Visual_Studio_SDK_Tools\\NuGetPackages"
+        "E:\\visual-studio-sdk\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\Max\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -114,7 +114,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
